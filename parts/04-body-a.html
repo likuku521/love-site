@@ -1,0 +1,85 @@
+<body>
+<div class="aurora"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="stars" id="starField"></div>
+<div class="shooting" style="top:22%;right:-8%"></div>
+<div class="shooting s2" style="right:-20%"></div>
+<canvas id="heartCanvas"></canvas>
+
+<!-- 封面 -->
+<section id="cover">
+  <div class="hero-kicker">写 在 星 夜 里 的 话</div>
+  <h1 class="hero-name">致 小 颖</h1>
+  <div class="hero-line">有些喜欢，想说给你一个人听</div>
+  <div class="hero-date">✦ 2023.12.01 · 故事开始的那天</div>
+  <button class="btn-pulse" id="btnCount">数到三</button>
+  <div class="scroll-hint">按下暗号，故事开始</div>
+</section>
+
+<div id="countdown"><div id="cdNum">3</div><div id="cdTag">数 到 三 · 我 就 说</div></div>
+
+<main>
+  <!-- 时间线 -->
+  <section id="story">
+    <div class="center reveal"><span class="ch-tag">第 一 章</span></div>
+    <h2 class="sec-title center reveal" style="--delay:.1s">故事的轨迹</h2>
+    <p class="sec-sub center reveal" style="--delay:.2s">三颗星星，三段时光</p>
+    <div class="timeline">
+      <div class="t-node reveal">
+        <span class="t-star">✦</span>
+        <div class="t-date">2023.12.01 · 星落</div>
+        <div class="t-card">那天起，我的生活里多了一个你。<br>你说过的每一句话，我都记得。</div>
+      </div>
+      <div class="t-node reveal" style="--delay:.15s">
+        <span class="t-star">✦</span>
+        <div class="t-date">之后的每一天 · 星光</div>
+        <div class="t-card">一起吃饭、散步、说废话。<br>你总爱说<b>「数到三」</b>，而我每次都认真在等。</div>
+      </div>
+      <div class="t-node reveal" style="--delay:.3s">
+        <span class="t-star">✦</span>
+        <div class="t-date">现在 · 星河</div>
+        <div class="t-card">日子一天天过，快三年了——<br><b>我还是想，一直陪在你身边。</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 照片墙 -->
+  <section id="photos">
+    <div class="center reveal"><span class="ch-tag">第 二 章</span></div>
+    <h2 class="sec-title center reveal" style="--delay:.1s">把时光装进相框</h2>
+    <p class="sec-sub center reveal" style="--delay:.2s">七张照片，七次心动</p>
+    <div class="wall">
+      <figure class="polaroid p1 reveal" style="--rot:-3deg"><span class="pin"></span><img src="__IMG1__" alt="我们的照片"><figcaption>有些遇见，一眼就是好多年</figcaption></figure>
+      <figure class="polaroid p2 reveal" style="--rot:2.4deg;--delay:.1s"><span class="pin"></span><img src="__IMG2__" alt="我们的照片"><figcaption>你笑起来的时候，风都是甜的</figcaption></figure>
+      <figure class="polaroid p3 reveal" style="--rot:2.8deg;--delay:.15s"><span class="pin"></span><img src="__IMG3__" alt="我们的照片"><figcaption>镜头里是你，镜头外是我</figcaption></figure>
+      <figure class="polaroid p4 reveal" style="--rot:-2.2deg;--delay:.2s"><span class="pin"></span><img src="__IMG4__" alt="我们的照片"><figcaption>把普通的日子，过成纪念日</figcaption></figure>
+      <figure class="polaroid p5 reveal" style="--rot:3deg;--delay:.25s"><span class="pin"></span><img src="__IMG5__" alt="我们的照片"><figcaption>世界很大，幸好有你</figcaption></figure>
+      <figure class="polaroid p6 reveal" style="--rot:-2.6deg;--delay:.3s"><span class="pin"></span><img src="__IMG6__" alt="我们的照片"><figcaption>时间在走，好在你没变</figcaption></figure>
+      <figure class="polaroid p7 reveal" style="--rot:2deg;--delay:.35s"><span class="pin"></span><img src="__IMG7__" alt="我们的照片"><figcaption>未来的故事，想和你一起写</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 理由便签 -->
+  <section id="reasons">
+    <div class="center reveal"><span class="ch-tag">第 三 章</span></div>
+    <h2 class="sec-title center reveal" style="--delay:.1s">喜欢你的证据</h2>
+    <p class="sec-sub center reveal" style="--delay:.2s">翻开每一张便签</p>
+    <div class="notes">
+      <div class="note reveal"><div class="note-inner">
+        <div class="note-face note-front" style="--nrot:-1.5deg"><span class="tape"></span><span class="heart">♥</span><span class="no">理 由 · 一</span></div>
+        <div class="note-face note-back">你在身边的时候，我什么都不怕</div>
+      </div></div>
+      <div class="note reveal" style="--delay:.1s"><div class="note-inner">
+        <div class="note-face note-front" style="--nrot:1.2deg"><span class="tape"></span><span class="heart">♥</span><span class="no">理 由 · 二</span></div>
+        <div class="note-face note-back">再普通的一天，有你就有了光</div>
+      </div></div>
+      <div class="note reveal" style="--delay:.2s"><div class="note-inner">
+        <div class="note-face note-front" style="--nrot:1.6deg"><span class="tape"></span><span class="heart">♥</span><span class="no">理 由 · 三</span></div>
+        <div class="note-face note-back">你懂我的奇奇怪怪，也陪我可可爱爱</div>
+      </div></div>
+      <div class="note reveal" style="--delay:.3s"><div class="note-inner">
+        <div class="note-face note-front" style="--nrot:-1.2deg"><span class="tape"></span><span class="heart">♥</span><span class="no">理 由 · 四</span></div>
+        <div class="note-face note-back">不离不弃，同舟共济<br>——不是说说而已</div>
+      </div></div>
+    </div>
+  </section>
+</main>
